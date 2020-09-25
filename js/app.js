@@ -17,22 +17,22 @@
  * Define Global Variables
  *
  */
-
 const sectionElements = document.querySelectorAll('section');
 const navbarList = document.getElementById('navbar__list');
 const mybutton = document.getElementById("myBtn");
+
 
 /**
  * End Global Variables
  * Start Helper Functions
  *
  */
-
+ 
 /**
-* The Element.getBoundingClientRect() method returns the size of an element and its
-* position relative to the viewport.
-* https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
-*/
+ * The Element.getBoundingClientRect() method returns the size of an element and its
+ * position relative to the viewport.
+ * https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
+ */
 const isInViewport = function(el) {
   const bounding = el.getBoundingClientRect();
   return (bounding.top <= 250 && bounding.top >= -300);
@@ -75,7 +75,9 @@ function activateSectionInView() {
 
 // Scroll to top of page found in w3schools.
 //https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-window.onscroll = function(event) {scrollFunction(event)};
+window.onscroll = function(event) {
+  scrollFunction(event)
+};
 
 function scrollFunction(event) {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 350) {
@@ -109,7 +111,7 @@ document.addEventListener('DOMContentLoaded', buildNav);
 navbarList.addEventListener('click', scrollToSection);
 // Set sections as active
 window.addEventListener('scroll', activateSectionInView, false);
-// Set the Top button for click 
+// Set the Top button for click
 mybutton.addEventListener('click', (event) => goToTop(event));
 // Go to top function
 function goToTop(event) {
