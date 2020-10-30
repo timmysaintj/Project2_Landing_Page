@@ -1,7 +1,14 @@
 * Project2_Landing_Page
 
 
-# Udacity Landing Page Project
+# Udacity Landing Page Project:
+
+  ***\
+  * Manipulating the DOM exercise.
+  * Exercise programmatically builds navigation,
+  * scrolls to anchors from navigation,
+  * and highlights section in viewport upon scrolling.
+  \***
 
 This fucked up project is the second project for the Udacity Front End Developer Nano-Degree. It
 is supposed to help you learn how to manipulate the DOM. However, their course for this section
